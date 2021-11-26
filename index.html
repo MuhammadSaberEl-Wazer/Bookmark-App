@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="image/star-png.png" type="image/icon type">
+    <title>Bookmark</title>
+</head>
+
+<body>
+    <div class="container w-50 shadow mt-5 py-5 px-3 d-flex flex-column justify-content-center">
+        <h1 class="text-center mb-4">Bookmark App</h1>
+        <label for="WebsiteName" class="mb-1  d-flex justify-content-center ">Website Name:</label>
+        <input type="text" class="form-control mb-3 d-flex justify-content-center" id="websiteName" placeholder="Website name..." required />
+        <label for="WebsiteURL" class="mb-1 d-flex justify-content-center ">Website URL:</label>
+        <input type="text" class="form-control mb-3 d-flex justify-content-center" id="websiteURL" placeholder="Website URL..." required />
+        <label for="WebsiteURL" id="urlInvalid" class="mb-1 d-flex justify-content-center "></label>
+
+        <button onclick="add()" id="main-btn" class="btn btn-info m-auto" type="submit" disabled>Submit</button>
+
+    </div>
+
+    <table class="table w-50 shadow mt-5 py-5 px-3 table-striped container text-center">
+        <thead>
+        </thead>
+        <tbody id="myTableo">
+
+
+
+        </tbody>
+    </table>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
